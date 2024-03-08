@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+body {
+    background-color: #1F1F2F;
+    color: white;
+    font-family: "Happy Monkey", system-ui;
+    /* font-weight: 400;
+    font-style: normal; */
+}
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    flex-direction: column;
+}
+
+.title {
+    background-color: #4B495F;
+}
+
+.game-heading {
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.square-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.move-detection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    /* gap: 5vw; */
+}
+
+.left,
+.right {
+    height: 40px;
+    width: 120px;
+    background-color: #4B495F;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.finished-state {
+    font-size: 20px;
+    text-align: center;
+}
+
+.playOnline {
+    margin-top: 40vh;
+    background-color: #E4CA56;
+    font-size: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    font-weight: 800;
+}
+
+.wait-opponent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50vh;
+    font-size: 30px;
+}
+
+.current-move-cross {
+    background-color: #3FA7F0 !important;
+}
+
+.current-move-circle {
+    background-color: #DD7F9F !important;
+}
